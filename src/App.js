@@ -13,8 +13,6 @@ function App() {
     setImgRandom(Math.trunc(Math.random() * 1000))
     setImg(`https://picsum.photos/id/${imgRandom}/1200/800`)
    }
- 
-  //   setImg(`https://picsum.photos/id/${imgRandom}/1200/800`);
     
 
   return (

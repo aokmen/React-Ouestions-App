@@ -1,0 +1,137 @@
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: rgb(19, 11, 35);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    background-color: #FF3CAC;
+    background-image: linear-gradient(225deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200vh;
+    border-radius: 50px;
+    font: 1em/1.618 Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 30px;
+    color: #224;
+    background:
+      url(https://source.unsplash.com/E8Ufcyxz514/2400x1823)
+      center / cover no-repeat fixed;
+}
+h1{
+    text-align: center;
+}
+.question {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.title{
+margin: 30px 0;
+background-color: #0000009a;
+color: white;
+padding: 20px;
+border-radius: 20px;
+text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.title span{
+    color: #89eaec;
+}
+
+.cards{
+    margin: 30px 60px;
+    box-shadow: inset 0.2em 0.2em 0.9em rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 600px;
+    padding: 35px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+.bi:hover{
+  cursor: pointer;
+  fill:white;
+  border-radius: 50%;
+ 
+
+}
+.moving-background {
+    background: url('https://i.stack.imgur.com/jGlzr.png') no-repeat 0 0 scroll;
+    width:300px;
+    height:100px;    
+}
+
+.button {
+    position:absolute; 
+    top:20px;    
+    left:50px;
+    height:50px;
+    width:100px;
+    background:blue;
+    color:white;
+    cursor:pointer;
+    z-index:20;     
+}
+h2{
+    font-size: 1.5rem !important;
+}
+h2:hover{
+    color: #261633;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    cursor:default;
+}
+.answer{
+    /* border: 1px solid rgb(33, 21, 23); */
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: inset 0 0 0.1em rgb(255, 255, 255);
+    color: #000000;
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+    transition:all 0.9 ease !important;
+
+}
+
+.bg-color{
+    transition: all 0.9s ease;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    height: 250vh;
+    z-index: -1;
+    width: 2000px;
+    object-fit: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+.btn-image{
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+}
+.btn-image:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.929);
+}
+.btn-image:active{
+    transform: scale(0.9);
+}

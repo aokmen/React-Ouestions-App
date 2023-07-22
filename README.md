@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# React Interview Questions & Answers App
+<h3>visit: https://react-questions-interview-app.netlify.app/ </h3>
+<img alt="alt_text" src="./interview.gif"/>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description:
+This project is a React-based web application that provides a list of interview questions and their corresponding answers. The application showcases the questions in an accordion-style format, allowing users to click on a question to reveal its answer. Below are the key components and features of the project:
 
-In the project directory, you can run:
+## Components
 
-### `yarn start`
+### App.js
+- The main entry point of the application.
+- Manages the state for the background image and its random change functionality.
+- Renders the Header component, InterviewAccord component, and a background image using an img tag.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Header.js
+- Renders the title "React Interview Questions & Answers" at the top of the application.
+- Uses CSS styles for background color, padding, and border-radius to create a visually appealing title container.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### InterviewAccord.js
+- Fetches the interview questions and answers from the data.js file.
+- Maps through the data to create instances of the Question component for each question-answer pair.
+- Renders the Question components within a container, creating an accordion-style layout.
 
-### `yarn test`
+### Question.js
+- Receives props for each question-answer pair (question, answer, id).
+- Utilizes React's useState hook to manage the state of the question's visibility (show/hide).
+- Renders the question and a clickable icon (arrow up or down) for toggling the visibility of the answer.
+- When the icon is clicked, the answer's visibility state is toggled.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Data
+The data.js file contains an array of interview questions and answers. Each item in the array has the following properties:
 
-### `yarn build`
+- id: A unique identifier for the question-answer pair.
+- question: The interview question.
+- answer: The corresponding answer to the question.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Styling
+- The App.css file contains styles for the background and the entire application layout.
+- CSS styles are used to create a visually pleasing UI, including card-like containers for each question-answer pair.
+- Background images are set using inline styles on the img tag in App.js.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Random Background Image
+- The application includes a "Change Image Background" button that allows users to change the background image randomly.
+- Clicking the button triggers a function that generates a random number and fetches a background image from the Unsplash API using the `picsum.photos` service.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Summary
+The React Interview Questions & Answers application is a useful tool for candidates preparing for React developer interviews. It presents interview questions in a visually appealing and user-friendly format, allowing users to focus on the questions they are interested in. The project demonstrates the use of React components, state management, and CSS styling to create an engaging and interactive user experience.

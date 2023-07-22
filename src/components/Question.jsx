@@ -34,13 +34,3 @@ const handClick = () => {
 };
 
 export default Question;
-
-{/* <div>{ show ? (<div className="question"><h2>{question}</h2><div onClick={handClick}>{arrowdown}</div></div>):(<div className="answer"><h2>{question}</h2><div onClick={handClick}>{arrowup}</div><p>{answer}</p></div>) }
-</div> */}
-
-
-// const [show,showSet] = useState(true)
-// const handClick = () => {
-//     showSet(!show)}
-
-// { question, answer }
